@@ -52,7 +52,7 @@ module BeforeRender
   end
 
   def before_render_filters
-    filter_chain.select(&:before_render?).map(&:mehtod)
+    filter_chain.select(&:before_render?).map(&:method)
   end
 
 end
